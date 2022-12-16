@@ -1,0 +1,30 @@
+//Basically ett vs plugin(rest client) som är som postman/insomnia osv, skriver mina requests här ist.
+GET http://localhost:4000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTGlubmEiLCJpYXQiOjE2NzA2ODU3MzQsImV4cCI6MTY3MDY4NTc0OX0.hXYEUNclS2aJDl8-W6_QoeacZKRaLiVc-Yy7Ez_JzsE
+
+###
+
+POST http://localhost:5000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTGlubmEiLCJpYXQiOjE2NzA2ODYwOTl9.WG-2nZMj1IeRFlyqLuYIWISaMsjwhHdrJTJaQYL4PAk"
+}
+
+###
+
+DELETE http://localhost:5000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTGlubmEiLCJpYXQiOjE2NzA2ODYwOTl9.WG-2nZMj1IeRFlyqLuYIWISaMsjwhHdrJTJaQYL4PAk"
+}
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "Linna"
+}
